@@ -2,42 +2,47 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
-.header {
-  margin-bottom: 20px;
+header {
+  text-align: center;
 }
 
-.login-form {
+header img {
+  width: 100px;
+  height: 100px;
+}
+
+header h1 {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
-.form-group {
-  margin-bottom: 15px;
+form label {
+  color: green;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
+form input {
+  color: black;
+  margin-bottom: 10px;
 }
 
 button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  background-color: blue;
   color: white;
-  border: none;
+}
+
+a {
+  color: blue;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+.error-message {
+  color: red;
+  margin-top: 10px;
 }

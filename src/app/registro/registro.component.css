@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  header h1 {
+    color: green;
+  }
+  
+  main {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  form label {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  p a {
+    color: blue;
+  }
+  
