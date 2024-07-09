@@ -1,6 +1,6 @@
 <div class="registro-container">
   <header>
-    <img src="./assets/Imagen1.png"  alt="Logo de Presupuesto">
+    <img src="./assets/Imagen1.png" alt="Logo de Presupuesto">
     <h1>Registro de Cuenta</h1>
   </header>
   <form (ngSubmit)="register()">
@@ -22,7 +22,5 @@
     <button type="submit">Registrar</button>
     <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
   </form>
-  <a (click)="goToLogin()">¿Ya tienes cuenta? Inicia Sesión</a>
+  <a routerLink="/login">¿Ya tienes cuenta? Inicia Sesión</a>
 </div>
-
-  

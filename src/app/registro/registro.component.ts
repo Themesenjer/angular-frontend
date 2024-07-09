@@ -30,8 +30,4 @@ export class RegistroComponent {
     console.log('Registration successful');
     this.router.navigate(['/login']);
   }
-
-  goToLogin() {
-    this.router.navigate(['/login']);
-  }
 }

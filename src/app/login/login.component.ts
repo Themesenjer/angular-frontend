@@ -22,8 +22,4 @@ export class LoginComponent {
       console.log('Login failed');
     }
   }
-
-  goToRegister() {
-    this.router.navigate(['/registro']);
-  }
 }

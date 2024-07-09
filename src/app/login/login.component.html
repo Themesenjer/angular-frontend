@@ -13,6 +13,5 @@
     <button type="submit">Inicio de Sesión</button>
     <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
   </form>
-  <a (click)="login()">¿Olvidaste tu contraseña?</a>
-  <a (click)="goToRegister()">¿No tienes una cuenta? Regístrate</a>
+  <a routerLink="/registro">¿No tienes una cuenta? Regístrate</a>
 </div>
