@@ -3,17 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { LoginModule } from './login/login.module';
-import { RegistroModule } from './registro/registro.module';
 import { AuthService } from './auth.service';
+import { PrimeNgConfigModule } from '../primeng/primeng-config.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    LoginModule,
-    RegistroModule
+    PrimeNgConfigModule 
   ],
   declarations: [AppComponent],
   providers: [AuthService],
