@@ -1,74 +1,18 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0; /* Cambia el color de fondo si lo deseas */
-}
-
-.registro-container {
-  width: 100%;
+.login-container, .registro-container {
   max-width: 400px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  margin: 0 auto;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header img {
-  width: 100px;
-  height: 100px;
+  margin-right: 10px;
 }
 
-header h1 {
-  color: green;
-}
-
-main {
-  text-align: center;
-  margin-top: 50px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form label {
-  color: black;
-  display: block;
-  margin-bottom: 5px;
-  width: 100%;
-}
-
-form input {
-  padding: 8px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-form button {
-  background-color: green;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-p a {
-  color: blue;
-}
-
-a {
-  display: block;
-  margin-top: 20px;
-  text-align: center;
+.error-message {
+  color: red;
 }
