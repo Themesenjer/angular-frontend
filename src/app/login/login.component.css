@@ -1,3 +1,26 @@
+.login__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login__body__footer{
+  background-color: yellowgreen;
+
+}
+.login__body, .login__body__footer__Copyrigh > h1 {
+ color: red;  
+
+}
+
 .login-container {
   display: flex;
   flex-direction: column;
