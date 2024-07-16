@@ -1,67 +1,18 @@
-html, body {
-  height: 100%;
-  margin: 0;
+.login-container, .registro-container {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.container {
+header {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.header {
-  background-color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.logo {
-  max-height: 100%;
-}
-
-.sidebar {
-  background-color: gray;
-  width: 200px;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.sidebar a {
-  color: blue;
-  text-decoration: none;
+header img {
+  margin-right: 10px;
 }
 
-.rightbar {
-  background-color: lightblue;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-content {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center;    /* Centra el contenido verticalmente */
-}
-
-.registro-content {
-  background-color: orange;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
-  align-items: center;    /* Centra el contenido horizontalmente */
-  padding: 20px;
-}
-
-footer {
-  background-color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center;    /* Centra el contenido verticalmente */
+.error-message {
+  color: red;
 }

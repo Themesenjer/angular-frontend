@@ -1,26 +1,33 @@
-<div class="container">
-  <header class="header">
-    <img src="assets/Imagen1.png" alt="Logo" class="logo" />
-  </header>
-  <div class="sidebar">
-    <a routerLink="/login">Inicia sesión</a>
+<div class="p-d-flex p-jc-center p-ai-center p-mt-5">
+  <div class="p-card p-shadow-6 p-p-4">
+    <header class="p-d-flex p-ai-center p-jc-center p-mb-4">
+      <img src="assets/Imagen1.png" alt="Logo de Presupuesto" class="p-mr-2" style="width: 50px;">
+      <h1>Registro de Cuenta</h1>
+    </header>
+    <form (ngSubmit)="register()" class="p-fluid">
+      <div class="p-field">
+        <label for="nombre">Nombres</label>
+        <input pInputText type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required>
+      </div>
+      <div class="p-field">
+        <label for="apellido">Apellidos</label>
+        <input pInputText type="text" id="apellido" [(ngModel)]="apellido" name="apellido" required>
+      </div>
+      <div class="p-field">
+        <label for="email">Email</label>
+        <input pInputText type="email" id="email" [(ngModel)]="email" name="email" required>
+      </div>
+      <div class="p-field">
+        <label for="password">Contraseña</label>
+        <input pInputText type="password" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+      <div class="p-field">
+        <label for="confirmPassword">Confirmar Contraseña</label>
+        <input pInputText type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+      </div>
+      <button pButton type="submit" label="Registrar" class="p-mt-3"></button>
+      <div *ngIf="errorMessage" class="error-message p-mt-3">{{ errorMessage }}</div>
+    </form>
+    <a routerLink="/login" class="p-mt-3">¿Ya tienes cuenta? Inicia Sesión</a>
   </div>
-  <div class="rightbar">
-    <p>Grupo KFC</p>
-  </div>
-  <div class="main-content">
-    <div class="registro-content">
-      <h2>Registro</h2>
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" />
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" />
-        <button type="submit">Registro</button>
-      </form>
-    </div>
-  </div>
-  <footer>Derechos reservados: pjr.reyes&#64;yavirac.edu.ec</footer>
 </div>
