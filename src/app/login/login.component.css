@@ -1,33 +1,35 @@
-.login-container {
+.login__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-header {
+.login__header {
   text-align: center;
 }
 
-header img {
-  width: 100px;
-  height: 100px;
+.login__header img {
+  width: 50px;
+  height: 50px;
 }
 
-header h1 {
+.login__header h1 {
   color: red;
 }
 
-form {
+.login__body form {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
-form label {
+.login__body form label {
   color: green;
 }
 
-form input {
+.login__body form input {
   color: black;
   margin-bottom: 10px;
 }

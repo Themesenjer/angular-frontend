@@ -14,7 +14,7 @@
         <input pInputText type="text" id="apellido" [(ngModel)]="apellido" name="apellido" required>
       </div>
       <div class="p-field">
-        <label for="email">Email</label>
+        <label for="email">Correo</label>
         <input pInputText type="email" id="email" [(ngModel)]="email" name="email" required>
       </div>
       <div class="p-field">
@@ -28,6 +28,6 @@
       <button pButton type="submit" label="Registrar" class="p-mt-3"></button>
       <div *ngIf="errorMessage" class="error-message p-mt-3">{{ errorMessage }}</div>
     </form>
-    <a routerLink="/login" class="p-mt-3">¿Ya tienes cuenta? Inicia Sesión</a>
+    <a routerLink="/login" class="p-mt-3">¿Ya tienes una cuenta? Inicia Sesión</a>
   </div>
 </div>

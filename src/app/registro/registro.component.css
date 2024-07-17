@@ -1,18 +1,48 @@
-.login-container, .registro-container {
-  max-width: 400px;
-  margin: 0 auto;
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 header img {
-  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+header h1 {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+form label {
+  color: green;
+}
+
+form input {
+  color: black;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
 }
 
 .error-message {
   color: red;
+  margin-top: 10px;
 }

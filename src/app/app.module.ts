@@ -5,17 +5,24 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AuthService } from './auth.service';
 import { PrimeNgConfigModule } from '../primeng/primeng-config.module';
+import { NavbarComponent } from './assets-header/navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    PrimeNgConfigModule 
+    PrimeNgConfigModule
   ],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    LoginComponent
+  ],
   providers: [AuthService],
-  bootstrap: []
+  bootstrap: [AppComponent]
 })
 export class AppModule implements DoBootstrap {
   constructor(private appRef: ApplicationRef) {}
@@ -24,3 +31,4 @@ export class AppModule implements DoBootstrap {
     this.appRef.bootstrap(AppComponent);
   }
 }
+
