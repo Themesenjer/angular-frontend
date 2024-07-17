@@ -6,9 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthService } from './auth.service';
 import { PrimeNgConfigModule } from '../primeng/primeng-config.module';
 import { NavbarComponent } from './assets-header/navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
-
-
+import { LoginComponent } from './login/login.component';  
 @NgModule({
   imports: [
     BrowserModule,
@@ -19,7 +17,7 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent  // Declara el componente
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
